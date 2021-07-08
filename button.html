@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="subscribe-section">
+        <h2>The modal thang</h2>
+        <p>Scroll down to see the modal</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt tempora sapiente, officiis soluta vero explicabo molestias error in iste rerum debitis fugit, veniam harum eveniet assumenda voluptas est at ea eligendi similique? Libero, iure. Deleniti impedit odit optio modi?</p>
+        <button class="modal-btn">Modal</button>
+    </div>
+    <div class="modal-bg">
+        <div class="modal">
+            <h2>Subscribe</h2>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <label for="email">Email</label>
+            <input type="text" name="email">
+            <button>Subscribe</button>
+            <span class="modal-close">X</span>
+        </div>
+
+
+
+
+
+    </div>
+<script>
+ var modalBtn = document.querySelector('.modal-btn');
+ var modalBg = document.querySelector('.modal-bg');
+ var modalClose = document.querySelector('.modal-close')
+
+ modalBtn.addEventListener('click',function(){
+     modalBg.classList.add('bg-active')
+ });
+ modalClose.addEventListener('click',function(){
+    modalBg.classList.remove('bg-active')
+ })
+
+
+</script>
+
+
+
+</body>
+</html>

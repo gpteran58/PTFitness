@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* Nav section */
+header {
+  background-color: rgb(19, 120, 219);
+  width: 80%;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 70%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+#logo {
+  flex: 1 1 40rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.required:after {
+  content: "*";
+  color: rgb(255, 0, 0);
+  font-size: 2.0rem;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+
+.hero {
+  /* background: olive; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  /* border: 2px solid gray; */
+}
+
+.hero h3 {
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.home-fitness,
+.home-nutrition,
+.home-support,
+.home-success {
+  /* background: rgb(19, 120, 219 ); */
+  color: rgb(155, 155, 155);
+  width: 240px;
+  padding: 20px;
+}
+
+.challengePacks h2 {
+  background: rgb(19, 120, 219);
+  text-align: center;
+  height: 40px;
+  padding: 10px 0 0 0;
+  width: 80%;
+  color: white;
+  margin: auto;
+}
+
+.challengProducts {
+  /* border: 2px dashed slateblue; */
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.freeSignUp {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 400px;
+  width: 600px;
+  /* display: flex; */
+  margin: auto;
+  /* background-image: url("images/top-challenge-packs-banner-1920-640-en-us-031919.png"); */
+}
+
+.freeSignUp h3 {
+  font-size: 1.8rem;
+  padding: 50px 0 0 50px;
+  width: 400px;
+  /* border: 2px dashed salmon; */
+}
+
+.freeSignUp p {
+  width: 400px;
+  padding: 20px 0 0 50px;
+}
+
+.challengePackPicks {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.freeSignUp {
+  /* border: 2px dotted greenyellow; */
+  width: 400px;
+}
+button {
+  background: rgb(19, 120, 219);
+  transition: background-color 0.4s ease-in-out;
+  padding: 10px 40px;
+  border-radius: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  border: 0px;
+  margin: 40px 0 0 50px;
+}
+
+button:hover {
+  background-color: rgb(255, 162, 2);
+}
+
+footer {
+  background-color: rgb(19, 120, 219);
+  width: 80%;
+  margin: auto;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+}
+.side-menu-content {
+  color: #fff;
+  font-size: 24px; /* could use ems here I guess but eh... */
+  margin: 25px;
+  padding-left: 0; /* zeroing it out */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.side-menu-content li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.side-menu-position {
+  padding-top: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.side-menu-design {
+  background-color: #4f8cf6;
+  background-size: 375px 700px;
+  background-repeat: repeat;
+  cursor: pointer;
+  opacity: .5;
+  transform: translateX(100%);
+  transition: 0.4s ease-in-out;
+}
+.show-menu {
+  opacity: .9;
+  transform: translateX(0%);
+}
+
+#menu-close {
+  padding: 20px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .hero {
+    /* background-color: green; */
+    flex-direction: column;
+  }
+  .main-head ul {
+    display: none;
+  }
+  .challengProducts {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .challengePackPicks {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fitnessNutrition {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .challengProducts h3 {
+    width: 240px;
+  }
+  .challengProducts p {
+    width: 240px;
+  }
+  .fitnessNutrition img {
+    width: 300px;
+  }
+  .challengProducts button {
+    margin: 20px 0px 0px 45px;
+  }
+  .freeSignUp {
+    width: 300px;
+  }
+  .hamburger-menu {
+    display: inline;
+  }
+  .side-menu-position ul {
+    display: block;
+  }
+
+}
+
+
+.contact {
+  background-color: rgb(19, 120, 219);
+  color: rgb(255, 255, 255);
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: auto;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 20px;
+  height: 90%;
+  -webkit-text-stroke: .25px rgb(0, 0, 0);
+}
+
+.contact h1 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.form-head h2 {
+  text-align: center;
+  padding: 20px;
+}
+.firstName {
+  display: flex;
+  flex-direction: column;
+}
+
+.lastName {
+  display: flex;
+  flex-direction: column;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneNumber {
+  display: flex;
+  flex-direction: column;
+}
+.currentFitness {
+  display: flex;
+  flex-direction: column;
+}
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  z-index: 1;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal button {
+  margin: 20px;
+  padding: 10px 30px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.modal {
+  background-color: rgb(59, 142, 244);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
