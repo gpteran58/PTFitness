@@ -106,6 +106,21 @@ nav ul {
   margin: auto;
 }
 
+.comingSoon {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 400px;
+  background-color: black;
+  width: 80%;
+  color: white;
+  align-items: center;
+}
+
+.comingSoon h2 {
+  padding: 20px;
+}
+
 .challengProducts {
   /* border: 2px dashed slateblue; */
   display: flex;
@@ -266,6 +281,9 @@ footer ul {
   }
   .side-menu-position ul {
     display: block;
+  }
+  .comingSoon {
+    background-image: none;
   }
 
 }
